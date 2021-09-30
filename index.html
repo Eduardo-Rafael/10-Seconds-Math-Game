@@ -9,9 +9,64 @@
     <link rel="stylesheet" href="bootsTrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d0a77992a0.js" crossorigin="anonymous"></script>
     <script src="js/function.js"></script>
   </head>
   <body>
+    <header class="container text-center my-3">
+      <h1>10 Seconds Math Game</h1>
+      <div class="row my-5">
+        <!-- first column -->
+        <div class="col-6">
+          <div class="contentpx-5">
+            <h3 class="text-center">Score : <span id="score">0</span></h3>
+          </div>
+        </div>
+        <!-- end of first column -->
 
+        <!-- second column -->
+        <div class="col-6">
+          <div class="contentpx-5">
+            <h3 class="text-center"><span id="high-scrore">0</span> : High Score</h3>
+          </div>
+        </div>
+        <!-- end of second column -->
+      </div>
+    </header>
+    <section class="container">
+      <h2 id="timer" class="text-center">10</h2>
+      <h4 class="text-center">second left</h4>
+      <div class="row my-3 justify-content-center">
+        <div class="col-auto">
+          <input type="number" class="form-control"/>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="btn btn-success">Start</button>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <label class="px-3">
+            <input type="checkbox" id="plus-operator" class="form-check-input" /> <span class="fas fa-plus"></span>
+          </label>
+          <label class="px-3">
+            <input type="checkbox" id="minus-operator" class="form-check-input" /> <span class="fas fa-minus"></span>
+          </label>
+          <label class="px-3">
+            <input type="checkbox" id="times-operator" class="form-check-input" /> <span class="fas fa-times"></span>
+          </label>
+          <label class="px-3">
+            <input type="checkbox" id="divide-operator" class="form-check-input" /> <span class="fas fa-divide"></span>
+          </label>
+        </div>
+      </div>
+      <h5 class="text-center mt-4">Number Limit</h5>
+      <div id="number-limit" class="text-center" >10</div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <input type="range" min="10" max="50" step="5" class="form-range" id="input-range" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
