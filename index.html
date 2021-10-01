@@ -36,18 +36,19 @@
     <section class="container">
       <h2 id="timer" class="text-center">10</h2>
       <h4 class="text-center">second left</h4>
+      <h3 id="equation" class="my-3 text-center" ></h3>
       <div class="row my-3 justify-content-center">
         <div class="col-auto">
-          <input type="number" class="form-control"/>
+          <input type="number" class="form-control" id="user-answer"/>
         </div>
         <div class="col-auto">
-          <button type="button" class="btn btn-success">Start</button>
+          <button type="button" class="btn btn-success" id="start-button">Start</button>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-auto">
           <label class="px-3">
-            <input type="checkbox" id="plus-operator" class="form-check-input" /> <span class="fas fa-plus"></span>
+            <input type="checkbox" id="plus-operator" class="form-check-input" checked disabled/> <span class="fas fa-plus"></span>
           </label>
           <label class="px-3">
             <input type="checkbox" id="minus-operator" class="form-check-input" /> <span class="fas fa-minus"></span>
@@ -68,5 +69,6 @@
         </div>
       </div>
     </section>
+    <div id="game-over-message" class="my-4 text-center fs-1"></div>
   </body>
 </html>
